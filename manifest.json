@@ -1,0 +1,21 @@
+{
+  "name": "MenuMaker",
+  "short_name": "MenuMaker",
+  "description": "hello webapp menu maker.",
+  "icons": [
+    {
+      "src": "static/img/testfa.icon.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "static/img/testfa.icon512.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "fullscreen",
+  "theme_color": "#B12A34",
+  "background_color": "#B12A34"
+}

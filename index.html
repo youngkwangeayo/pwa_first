@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="shortcut icon" href="./static/img/testfa.icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <title>MenuMaker</title>
+    <script src="./network/menu.api.js"></script>
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <h1>HELLO PWA</h1>
+
+    <button id="regist">test btn1</button>
+    <button id="remove-serviceworker">remove service worker</button>
+
+    <div id="app">
+        <div class="main">
+            <div class="category-area">
+                <div class="category item">C1</div>
+                <div class="category item">C2</div>
+                <div class="category item">C3</div>
+            </div>
+            <div class="product-area">
+                <div class="product item">P1</div>
+                <div class="product item">P2</div>
+                <div class="product item">P3</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./model/category.view.model.js"></script>
+    <script src="./model/product.view.model.js"></script>
+    <script src="./controller/menu.controller.js"></script>
+
+</body>
+
+</html>

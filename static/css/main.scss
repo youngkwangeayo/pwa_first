@@ -1,0 +1,56 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+
+    .category-area{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        background-color: aqua;
+        gap: 2rem;
+        overflow-x: auto;
+        align-items: stretch;
+    }
+    .product-area{
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: auto;
+        gap: 2rem;
+        height: 100%;
+        overflow-y: auto;
+    }
+}
+
+categroy-view-model {
+    border: solid;
+    width: 50%;
+
+    &.on {
+        button {
+            background-color: greenyellow;
+        }
+    }
+
+    button {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+product-view-model {
+    border: solid;
+    width: 20%;
+    button {
+        width: 100%;
+        height: fit-content;
+    }
+    img {
+        width: 100%;
+    }
+}
