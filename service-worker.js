@@ -2,8 +2,7 @@ importScripts("/config_worker/log.conf.js");
 importScripts("/config_worker/sw.conf.js");
 importScripts("/config_worker/idb.js");
 
-console.log("HELLO WORKER!");
-Log.debug("gherdfl",12321,"gogd!");
+Log.debug("HELLO WORKER!");
 
 self.addEventListener("install", event => {  // 최초 1번만 실행됨. 브라우저자체 또는 설치시 그 이후 실행안됨.
 

@@ -1,9 +1,8 @@
-console.log('[app.js]  app.js is ready : ', document.readyState);
+Log.debug('app is ready : ', document.readyState);
 
 if ('serviceWorker' in navigator) {
-    console.log("exist worker");
+    Log.debug('serviceWorker in app');
     navigator.serviceWorker.register('/service-worker.js');
-    // navigator.serviceWorker.register('./service-worker.js');
 };
 
 
@@ -27,8 +26,7 @@ document.querySelector('#remove-serviceworker').addEventListener("click", async(
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    console.log("DOMContentLoaded", document.readyState);
+    Log.debug('DOM is ready : ', document.readyState);
     renderMenus();
 })
 

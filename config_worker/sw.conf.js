@@ -16,9 +16,9 @@ const SwConf = new class {
         "/source/controller/menu.controller.js"
     ];
     
-    
 
-    constructor() { };
+
+    constructor() { Log.debug("SWCONF RUN") };
 
     get APP_VERSION () {return this.#APP_VERSION};
     get CACHE_NAME() { return this.#CACHE_NAME };
