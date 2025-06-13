@@ -41,11 +41,11 @@ categroy-view-model button {
 product-view-model {
   border: solid;
   width: 20%;
+  height: 20%;
 }
 product-view-model button {
   width: 100%;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
 }
 product-view-model img {
   width: 100%;

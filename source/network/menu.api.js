@@ -19,3 +19,22 @@ async function getMenuList(params) {
     
     return result = await apiResult.json();
 };
+
+async function getLocal(params) {
+
+    const url = '/test.js';
+
+    let result;
+    let apiResult;
+    try {
+        apiResult = await fetch(url,{ 
+                method : "GET",
+        });
+        
+        if ( !apiResult.ok ) return result = { error : { status : apiResult.status, request : apiResult, message : "request failed" } };
+    } catch (error) {
+        return result = { error : {message : "request failed" } };
+    };
+    
+    return result = apiResult;
+};

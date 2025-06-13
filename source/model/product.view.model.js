@@ -29,9 +29,9 @@ class ProductViewModel extends HTMLElement{
         btn.innerText = this.getProductData['productName'] ?? "product";
         
         const img = document.createElement("img");
-        let imgUrl = this.getProductData['imageUrl'] ?? "./static/img/testfa.icon.png";
+        let imgUrl = this.getProductData['imageUrl'] ?? "./source/static/img/testfa.icon.png";
         if( this.getProductData[['imageUrl']].length == 0 ){
-            imgUrl = "./static/img/testfa.icon.png";
+            imgUrl = "./source/static/img/testfa.icon.png";
         };
 
         img.setAttribute('src', imgUrl);

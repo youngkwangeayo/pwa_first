@@ -2,7 +2,8 @@ console.log('document.readyState', document.readyState);
 
 if ('serviceWorker' in navigator) {
     console.log("exist worker");
-    navigator.serviceWorker.register('./service_worker/service-worker.js');
+    navigator.serviceWorker.register('/service-worker.js');
+    // navigator.serviceWorker.register('./service-worker.js');
 };
 
 
@@ -29,6 +30,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     console.log("DOMContentLoaded", document.readyState);
     renderMenus();
+})
+
+
+
+// ==test
+document.querySelector("#test1").addEventListener("click", ()=>{
+    console.log("TEST REQUEST");
+    getMenuList();
+
+})
+document.querySelector("#test2").addEventListener("click", ()=>{
+    console.log("TEST REQUEST");
+    getLocal();
+
 })
 
 

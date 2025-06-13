@@ -46,9 +46,11 @@ categroy-view-model {
 product-view-model {
     border: solid;
     width: 20%;
+    height: 20%;
     button {
         width: 100%;
-        height: fit-content;
+        // height: fit-content;
+        height: 100%;
     }
     img {
         width: 100%;

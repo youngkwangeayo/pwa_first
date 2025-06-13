@@ -13,7 +13,7 @@ async function renderMenus() {
 
     for (let category of data.data.Category) {
         let categoryEle = new CategoryViewModel(category);
-        categoryEle.addEventListener("click", onClickCategoryHendler);
+        categoryEle.addEventListener("click", onClickCategoryHandler);
         categoryArea.append(categoryEle);
     };
 
@@ -21,7 +21,7 @@ async function renderMenus() {
 };
 
 
-function onClickCategoryHendler (event){
+function onClickCategoryHandler (event){
     for(let c of document.querySelectorAll('categroy-view-model')) c.classList.remove('on');
     
     event.currentTarget.classList.add('on');
