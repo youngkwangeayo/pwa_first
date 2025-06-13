@@ -31,12 +31,16 @@ const Log = new class {
     error (...args) {
         console.log("[debug] ", ...args);
 
-        // if (this.#instance ) {
-        //     callSwLog()  //console.log( ...args ); 등등처리
-        // }else{
-        //     callBwlog() //console.log( ...args ); 등등처리
-        // }
+        if (this.#origin == "sw" ) {
+            
+            // insert call IndexedDB
+        }else{
+            // postmessage send bw => sw
+        }
     };
 
+    tmptargetaddEventListener (){
+        // 리슨 포스트메세지 insert call indexedDB
+    }
 
 }
