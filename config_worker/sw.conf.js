@@ -1,14 +1,9 @@
 
-//     <script src="./app.js" defer></script>
-
 
 const SwConf = new class {
 
     #APP_VERSION = 1;
     
-    // #MAJOR = 0;
-    // #MINER = 0;
-    // #BUILD = 0;
 
     #CACHE_NAME = "menumaker-v1";
     #CACHE_FILLE = [
@@ -19,7 +14,8 @@ const SwConf = new class {
         "/source/model/category.view.model.js",
         "/source/model/product.view.model.js",
         "/source/controller/menu.controller.js"
-    ]
+    ];
+    
     
 
     constructor() { };
@@ -35,6 +31,3 @@ const SwConf = new class {
 
 
 };
-// class SwConf {
-
-// };

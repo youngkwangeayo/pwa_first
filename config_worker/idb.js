@@ -32,7 +32,7 @@ const IndexDB = new class {
         db.createObjectStore("OptionGroup", { keyPath: "ogid", autoIncrement: true });  // 옵션그룹 고민중.(어떻게쓸지 안쓸수도)
         db.createObjectStore("OptionItem", { keyPath: "otid", autoIncrement: true });   // 옵션아이템   고민중.(어떻게쓸지 안쓸수도)
 
-        db.createObjectStore("DataStatus", { keyPath: "otid", autoIncrement: true });   // 데이터 상태 strick, sync, inmemory
+        db.createObjectStore("MenuProcessStatus", { keyPath: "mpsid", autoIncrement: true });   // 데이터 상태 strick, sync, inmemory
     };
 
     #onerror(ev) {

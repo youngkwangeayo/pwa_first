@@ -1,8 +1,9 @@
+importScripts("/config_worker/log.conf.js")
 importScripts("/config_worker/sw.conf.js");
 importScripts("/config_worker/idb.js")
 
-
 console.log("HELLO WORKER!");
+Log.debug("gherdfl",12321,"gogd!");
 
 self.addEventListener("install", event => {  // 최초 1번만 실행됨. 브라우저자체 또는 설치시 그 이후 실행안됨.
 
@@ -27,23 +28,24 @@ self.addEventListener("activate", event => {
 
 });
 
+
 self.addEventListener("fetch", event => {
+
   const url = new URL(event.request.url);
-
-
+  console.log(navigator.onLine);
   let d = url.pathname.match('.png');
+
+  // if( navigator.onLine )
+
   // if (d) event.respondWith(caches.match('/source/static/img/faire.png'));
 });
 
-function proxyHandler () {
+async function proxyHandler () {
   
-  do {
-    
-    
+  menuProcessStatus
+  IndexDB.get()
 
-    
-  } while (true);
-
+  // if( navigator.onLine )
 };
 
 

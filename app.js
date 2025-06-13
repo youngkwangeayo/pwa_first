@@ -1,4 +1,4 @@
-console.log('document.readyState', document.readyState);
+console.log('[app.js]  app.js is ready : ', document.readyState);
 
 if ('serviceWorker' in navigator) {
     console.log("exist worker");
